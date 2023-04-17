@@ -1,6 +1,4 @@
-// import * as THREE from '../lib/three.module.js';
-import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import * as THREE from '../lib/three.module.js';
 import * as INIT from './init.module.js';
 import * as PC_GUI from './pc_gui.module.js';
 import * as PointCloudScene from './pointcloud_scene.module.js';
