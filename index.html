@@ -15,6 +15,14 @@
 				position: fixed;
 			}
 		</style>
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "../three/build/three.module.js",
+					"three/examples/jsm/controls/OrbitControls":"../three/examples/jsm/controls/OrbitControls.js",
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<script type="x-shader/x-vertex" id="vertexshader">
@@ -54,14 +62,6 @@
 
 			}
 
-		</script>
-		<script type="importmap">
-			{
-				"imports": {
-					"three": "../three/build/three.module.js",
-					"three/examples/jsm/controls/OrbitControls":"../three/examples/jsm/controls/OrbitControls.js",
-				}
-			}
 		</script>
         <input id="OpenFile" type="file" style="visibility:hidden"/>
 		<script src="lib/dat.gui.min.js"></script>
