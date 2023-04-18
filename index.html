@@ -1,31 +1,23 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>PointCloud Labeler Supreme</title>
-		<style>
-			body { 
-                margin: 0;
-                background-color: black;
-             }
-			canvas { display: block; }
-			.selectBox {
-				border: 1px solid #55aaff;
-				background-color: rgba( 75, 160, 255, 0.3);
-				position: fixed;
-			}
-		</style>
-		<script type="importmap">
-			{
-				"imports": {
-					"three": "../three/build/three.module.js",
-					"three/examples/jsm/controls/OrbitControls":"../three/examples/jsm/controls/OrbitControls.js",
-				}
-			}
-		</script>
-	</head>
-	<body>
-		<script type="x-shader/x-vertex" id="vertexshader">
+<head>
+	<meta charset="utf-8">
+	<title>PointCloud Labeler Supreme</title>
+	<style>
+		body {
+			margin: 0;
+			background-color: black;
+		}
+		canvas { display: block; }
+		.selectBox {
+			border: 1px solid #55aaff;
+			background-color: rgba( 75, 160, 255, 0.3);
+			position: fixed;
+		}
+	</style>
+</head>
+<body>
+<script type="x-shader/x-vertex" id="vertexshader">
 
 			attribute float size;
 			attribute vec3 customColor;
@@ -45,7 +37,7 @@
 			}
 
 		</script>
-		<script type="x-shader/x-fragment" id="fragmentshader">
+<script type="x-shader/x-fragment" id="fragmentshader">
 
 			uniform vec3 color;
 			uniform sampler2D pointTexture;
@@ -63,12 +55,12 @@
 			}
 
 		</script>
-        <input id="OpenFile" type="file" style="visibility:hidden"/>
-		<script src="lib/dat.gui.min.js"></script>
-		<script src="lib/three.js"></script>
-		<script type="module" src="src/init.module.js"></script>
-		<script type="module" src="src/pointcloud_scene.module.js"></script>
-		<script type="module" src="src/data_manager.module.js"></script>
-		<script type="module" src="src/main.js"></script>
-	</body>
+<input id="OpenFile" type="file" style="visibility:hidden"/>
+<script src="lib/dat.gui.min.js"></script>
+<script src="lib/three.js"></script>
+<script type="module" src="src/init.module.js"></script>
+<script type="module" src="src/pointcloud_scene.module.js"></script>
+<script type="module" src="src/data_manager.module.js"></script>
+<script type="module" src="src/main.js"></script>
+</body>
 </html>
